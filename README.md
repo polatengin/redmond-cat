@@ -1,5 +1,9 @@
 # redmond-cat
 
+# redmond-cat
+
+![CI](https://github.com/polatengin/redmond-cat/actions/workflows/ci.yml/badge.svg)
+
 A minimal, from-scratch reimplementation of the classic Unix `cat` command in C.  
 This project was built to learn low-level Linux programming and create a clean, modern `cat` clone without external dependencies.
 
