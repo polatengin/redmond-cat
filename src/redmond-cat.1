@@ -1,0 +1,50 @@
+.TH REDMOND-CAT 1 "August 2025" "redmond-cat 1.0" "User Commands"
+.SH NAME
+redmond-cat \- concatenate files and print on the standard output
+.SH SYNOPSIS
+.B redmond-cat
+.RI [ OPTIONS ] " [FILE...]"
+.SH DESCRIPTION
+The
+.B redmond-cat
+utility reads files sequentially, writing them to the standard output.
+If no
+.I FILE
+is specified, or if
+.I FILE
+is
+.BR - ,
+standard input is read.
+
+.SH OPTIONS
+.TP
+.B \-n
+Number all output lines.
+.TP
+.B \-s
+Suppress repeated empty output lines.
+
+.SH EXAMPLES
+.TP
+Concatenate two files:
+.EX
+redmond-cat file1.txt file2.txt
+.EE
+
+.TP
+Number all lines of a file:
+.EX
+redmond-cat -n file.txt
+.EE
+
+.TP
+Squeeze multiple blank lines into one:
+.EX
+redmond-cat -s file.txt
+.EE
+
+.SH AUTHOR
+Written from scratch as a learning project.
+
+.SH SEE ALSO
+.BR cat (1)
