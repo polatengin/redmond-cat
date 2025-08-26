@@ -4,8 +4,8 @@ PREFIX  := /usr/local
 BINDIR  := $(PREFIX)/bin
 MANDIR  := $(PREFIX)/share/man/man1
 TARGET  := redmond-cat
-SRC     := main.c
-MANPAGE := redmond-cat.1
+SRC     := ./src/main.c
+MANPAGE := ./src/redmond-cat.1
 
 all: $(TARGET)
 
@@ -20,7 +20,7 @@ install: $(TARGET) $(MANPAGE)
 
 uninstall:
 	rm -f $(BINDIR)/$(TARGET)
-	rm -f $(MANDIR)/$(MANPAGE)
+	rm -f $(MANDIR)/redmond-cat.1
 
 clean:
 	rm -f $(TARGET)
